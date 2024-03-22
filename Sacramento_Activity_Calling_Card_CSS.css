@@ -1,0 +1,85 @@
+.myBackground {
+    background-image: url("Kenneth_Bg_05.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.myLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myLogo img {
+    width: 250px;
+    height: 250px;
+    transition: all 1.5s ease;
+}
+
+.myLogo img:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.myName {
+    color: #f5be01;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    transition: color 1s ease;
+}
+
+.myName:hover {
+    color: gray;
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mySocialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mySocialMedia a {
+    display: inline-block;
+    transition: all 0.5 ease;
+}
+
+.mySocialMedia a img {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mySocialMedia a:hover img {
+    transform: scale(1.2);
+}
